@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedeemedHub: Create an account</title>
+   <!--  <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script> -->
+    <style>
+        *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background:radial-gradient( circle, white 20%, rgba(70, 3, 3, 0.877) 60%, white );
+   height: 100vh;
+   width: 100%;
+}
+
+.redeem{
+    margin: auto;
+    margin-top: 3rem;
+    border: 1px solid brown;
+    border-radius: 10%;
+    width: 22%;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.2rem;
+    color: white;
+    background: radial-gradient(circle, rgba(70, 3, 3, 0.877), rgb(13, 13, 37) 40%, rgba(70, 3, 3, 0.877)70%);
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.reg {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-end-start-radius: 30%;
+    border-start-end-radius: 30%;
+    padding: 6px;
+    color: white; 
+}
+ a:link{
+    text-decoration: none;
+}
+
+ a:hover{
+    background-color:rgba(134, 5, 5, 0.877);
+
+
+}
+
+.redeem input{
+    background-color: white;
+    padding: 10px 0px 10px 10px;
+    border: 0;
+    outline-color: rgba(104, 241, 241, 0.726);
+    margin-right:1rem ;
+   border-radius: 60px; 
+}
+
+input :first-of-type{
+    padding-left: 5rem;
+}
+
+::placeholder{
+    font-size:0.6rem;
+    color: black;
+    padding-left: 0.5rem;
+    font-weight: bolder;
+}
+
+h5{
+    position: relative;
+    left: 0.5rem;
+    top:0.5rem;
+    font-size: 0.7rem;
+    text-align: left;
+   padding: 2px;
+}
+
+.error{
+    color: black;
+    height: 13px;
+    font-size: 9px;
+  }
+  
+  .error input{
+      border-color: brown;
+  }
+
+.redeem button{
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border-color:rgba(70, 3, 3, 0.877);
+    background-color: rgb(5, 5, 51);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    box-shadow: 5px 4px 35px rgb(197, 185, 185);
+    cursor: pointer;
+}
+
+.redeem button:hover{
+    background-color:rgb(206, 26, 56) ;
+    border: 0;
+}
+
+
+@media all and (max-width:1200px) {
+    .redeem{
+       width:min(100%, 380px);
+       margin-top:7rem
+        
+    }
+}
+
+@media all and (min-width:1400px) {
+    .redeem{
+       width:min(100%, 380px);
+       margin-top:8rem
+        
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="redeem">
+    <h2><b>RedeemedHub</b></h2>
+    <h6>Create new account</h6>
+    <p>Already have account?  <a href="redeemedhub.html" class="reg">Log in</a> <br> <br>
+        <form action="" id="form">
+    <input id="username" type="text" name="fullname" placeholder="Enter Full Name" required> <br> <br>
+   <!--  <div class="error"></div> -->
+    <input id="email" type="email" name="email" placeholder="Enter Email Address"> <br><br>
+    <!-- <div class="error"></div> -->
+    <input id="password" type="password" name="pw1" placeholder="Enter Password"> <br> <br>
+    <!-- <div class="error"></div> -->
+    <input id="password2" type="password" name="pw2" placeholder="Repeat Password"> 
+    <!-- <div class="error"></div> -->
+</form>
+    <h5>By Clicking <em>Create new account,</em> you agree to the <em>terms of use </em>and <em>Privacy policy</em></h5>
+    <br><button type="button" onclick="create()"> Create new account</button>
+</div>
+</body>
+</html>

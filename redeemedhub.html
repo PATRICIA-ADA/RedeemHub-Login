@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedeemedHub: Login to your Account</title>
+ <!--    <link rel="stylesheet" href="redeemedhub.css">
+    <script src="redeemedhub.js"></script> -->
+<style>
+    *{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html{
+background:radial-gradient( circle, white 20%, rgba(70, 3, 3, 0.877) 60%, white );
+height: 100vh;
+width: 100%;
+}
+
+
+.redeem{
+margin: auto;
+margin-top: 8rem;
+border: 1px solid brown;
+border-radius: 10%;
+width: 22%;
+text-align: center;
+padding: 1rem;
+line-height: 1.2rem;
+color: white;
+background: radial-gradient(circle, rgba(70, 3, 3, 0.877), rgb(13, 13, 37) 40%, rgba(70, 3, 3, 0.877)70%);
+}
+
+h2{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+font-size: 0.7rem;
+}
+
+.reg {
+font-size: 1rem;
+font-weight: bold;
+border: 1px solid white;
+border-end-start-radius: 30%;
+border-start-end-radius: 30%;
+padding: 1px;
+margin: 0px 4rem;
+display: flex;
+
+}
+.reg a:link{
+text-decoration: none;
+color: white;
+flex: 1;
+
+
+}
+
+.reg a:visited{
+    color: white;
+}
+.reg a:hover{
+background-color:rgba(70, 3, 3, 0.877);
+border-end-start-radius: 30%;
+border-start-end-radius: 30%;
+
+}
+
+.forget{
+position: relative;
+right: -3rem;
+font-size: 0.7rem;
+
+}
+
+.forget a:link{
+text-decoration: none;
+color: white;
+}
+
+.forget a:visited{
+    color: white;
+}
+
+
+.redeem input{
+background-color: white;
+padding: 8px 0px 8px 10px;
+border: 0;
+outline-color: rgba(104, 241, 241, 0.726);
+margin-right:1rem ;
+border-radius: 60px; 
+}
+
+input :first-of-type{
+padding-left: 5rem;
+}
+
+::placeholder{
+font-size:0.6rem;
+color: black;
+padding-left: 0.5rem;
+font-weight: bolder;
+}
+
+
+
+.redeem button{
+padding: 0.3rem 4rem;
+border-radius: 10px;
+border-color:rgba(70, 3, 3, 0.877);
+background-color: rgb(5, 5, 51);
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+font-weight: bolder;
+box-shadow: 5px 4px 35px rgb(197, 185, 185);
+cursor: pointer;
+}
+
+.redeem button:hover{
+background-color:rgb(206, 26, 56) ;
+border: 0;
+}
+
+
+
+@media all and (max-width:1200px) {
+.redeem{
+   width:min(100%, 380px);
+   margin-top:12rem
+    
+}
+}
+
+@media all and (min-width:1400px) {
+.redeem{
+   width:min(100%, 380px);
+   margin-top:12rem
+    
+}
+
+}
+</style>
+</head>
+<body>
+    <div class="redeem">
+    <h2><b>RedeemedHub</b></h2>
+    <h6>Login to your account</h6>
+    <p>Don't have account?  </p>
+    <div class="reg">
+    <a href="register.html"> Register </a>
+    </div> <br> 
+    <form action="" id="form">
+    <input type="email" name="email" placeholder="Enter Email Address" id="email"> 
+        <!--  <div class="error"></div> --><br> <br>
+<input type="password" name="pw" placeholder="Enter Password" id="password">
+       <!--  <div class="error"></div> -->
+<div class="forget">
+    <a href="forgetpw.html">Forget password</a>
+</div>
+<button type="button" id="login"> Log in</button>
+</form>
+</div>
+
+</body>
+</html>
